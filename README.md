@@ -1,16 +1,31 @@
-# React + Vite
+# Smart Mushroom Cultivation System (Kumbung Jamur Pintar)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplikasi Progressive Web App (PWA) "Mobile-First" untuk memantau dan mengontrol lingkungan budidaya jamur tiram secara cerdas.
 
-Currently, two official plugins are available:
+## Tampilan Aplikasi (Screenshots)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+| Dashboard (Home) | Statistik (Stats) | Pengaturan (Config) |
+| :---: | :---: | :---: |
+| ![Dashboard](/public/screenshots/1.png) | ![Stats](/public/screenshots/2.png) | ![Config](/public/screenshots/3.png) |
 
-## React Compiler
+## Fitur Aplikasi
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Real-time Monitoring**: Pemantauan suhu dan kelembaban terkini dengan indikator visual sparkline.
 
-## Expanding the ESLint configuration
+* **Smart Control (Action Center)**:
+  * **Auto Mode (AI)**: Otomatisasi perangkat berdasarkan target suhu/kelembaban.
+  * **Manual Mode**: Saklar manual untuk Mister (Kabut), Exhaust Fan, dan Grow Lights.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Environmental Trends**: Visualisasi data historis suhu dan kelembaban menggunakan grafik interaktif.
+
+* **System Configuration**:
+  * Pengaturan Target Suhu & Kelembaban (Threshold).
+  * Konfigurasi jaringan WiFi (untuk sinkronisasi ESP32).
+  * Kalibrasi manual offset sensor.
+
+## Teknologi yang Digunakan
+
+* [React](https://react.dev/) (via Vite) - Framework UI
+* [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS & Glassmorphism Design
+* [Recharts](https://recharts.org/) - Library Grafik Data
+* [Lucide React](https://lucide.dev/) - Ikon Vektor Ringan
